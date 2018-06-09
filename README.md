@@ -12,11 +12,11 @@ Custom templage for WordPress CMS site.
 * node v9.3.0
 
 ### Theme in use / working folder
-* bootstrap-on-wordpress-theme-master-child
-OR if you want to edit master. do use 'bootstrap-on-wordpress-theme-master' then delete child template
+'bootstrap-on-wordpress-theme-master-child'
+OR if you want to use master template. do use 'bootstrap-on-wordpress-theme-master' then delete child template.
 
 ### How to use
-Put them into work folder and active template. files below are custom template that's need to define in WordPress backend so you can modify source code whatever you want ... add/edit/delete etc...
+Put them into WordPress theme folder and active a template. files below are custom template that's need to define in WordPress backend so you can modify source code whatever you want ... add/edit/delete etc...
 * page-home.php
 * page-pages.php
 * page-product.php
