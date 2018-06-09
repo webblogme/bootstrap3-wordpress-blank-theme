@@ -1,0 +1,137 @@
+/*MAKE SURE THIS IS SAME SETTING FOR ALL WEB*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: #900;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #369;
+	margin: 0.3em 0;
+	line-height: 1.3;
+}
+
+h1 {	font-size: 1.8em; }
+h2 {	font-size: 1.6em; }
+h3 {	font-size: 1.4em; }
+h4 {	font-size: 1.3em; font-weight: normal;}
+h5 {	font-size: 1.2em; font-weight: normal;}
+h6 {	font-size: 1.1em; font-weight: normal;}
+
+/*MAKE SURE THIS IS SAME SETTING FOR ALL WEB*/
+
+
+/*FORCE GUTENBERG STYLE*/
+
+.edit-post-visual-editor, 
+.edit-post-visual-editor p, 
+.editor-post-title .editor-post-title__input {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.editor-rich-text__tinymce.mce-content-body {
+    line-height: 1.5;
+}
+
+.editor-post-title.editor-post-title__input {
+	font-size: 1.6em;
+}
+
+.wp-block-freeform.core-blocks-rich-text__tinymce {
+	li, p {
+		line-height: 1.6;
+	}
+}
+
+.editor-block-list__block-edit {
+	h1, h2, h3, h4, h5, h6 {
+		color: #369;
+		text-decoration: none;
+	}
+}
+
+.editor-rich-text__tinymce a {
+	color: #900;
+}
+
+.editor-block-list__layout .editor-block-list__block .editor-block-list__block-edit {
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+/*FORCE GUTENBERG STYLE*/
+
+
+/*---------------shared style use in backend-------------------*/
+
+.yellowbox {
+	padding: 20px 30px;
+	margin-bottom: 20px;
+	border-top: 3px solid darken(@yellow, 20%);
+	background-color: fade(@yellow, 20%);
+	h2, h3, h4, h5, h6 {
+		.teal;
+	}
+}
+
+.yellowborder { 
+	padding: 20px 30px;
+	margin-bottom: 20px;
+	border: 1px solid darken(@yellow, 20%);
+	background-color: fade(@yellow, 20%);
+	h2, h3, h4, h5, h6 {
+		.teal;
+	}
+	ul {
+		margin-left: 15px;
+		li {
+			list-style-type: disc;
+		}
+	}
+}
+
+.blueanc {
+	background: @blue;
+	color: #fff;
+	padding: 8px 30px;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+/*REPEAT FOR GUTENBERG*/
+.editor-block-list__block-edit {
+	.yellowbox {
+		.yellowbox;
+	}
+	.yellowborder { 
+		.yellowborder;
+	}
+	h4.blueanc { 
+		.blueanc;
+	}
+} 
+
+/*REPEAT FOR CLASSIC in GUTENBERG*/
+.wp-block-freeform {
+	.yellowbox {
+		.yellowbox;
+	}
+	.yellowborder { 
+		.yellowborder;
+	}
+	h4.blueanc { 
+		.blueanc;
+	}
+}
+
+/*---------------shared style use in backend end-------------------*/

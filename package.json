@@ -1,0 +1,30 @@
+{
+  "name": "mySync",
+  "version": "0.0.1",
+  "description": "Browser Sync For me",
+  "author": "webblogme@gmail.com",
+  "repository": "none",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.0.5",
+    "gulp-less-sourcemap": "1.4.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "2.4.1",
+    "gulp-uglify": "2.0.1",
+    "gulp-util": "3.0.8",
+    "node-notifier": "5.0.2",
+    "pump": "1.0.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "concat": "^1.0.3",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat-js": "^0.1.0",
+    "gulp-line-ending-corrector": "^1.0.2",
+    "gulp-notify": "^3.2.0"
+  }
+}

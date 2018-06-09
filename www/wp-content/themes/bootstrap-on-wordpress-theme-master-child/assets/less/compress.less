@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS+LESS Document */
+
+.dropshadow {box-shadow: 3px 3px 5px rgba(0,0,0,0.4);}
+.textshadow {text-shadow: 2px 2px 4px rgba(0,0,0,0.1);}
+
+.border-radius(@radius) {
+  -webkit-border-radius: ~"@{radius}px";
+  -moz-border-radius: ~"@{radius}px";
+  border-radius: ~"@{radius}px";
+}
+
+.transition (@prop: all, @time: 0.15s, @ease: ease-out) {
+-webkit-transition: @prop @time @ease;
+-moz-transition: @prop @time @ease;
+-o-transition: @prop @time @ease;
+-ms-transition: @prop @time @ease;
+transition: @prop @time @ease;
+}
+
+/*-----------------------site varible---------------------*/
+
+@theme: #414c6a;
+@pink: #ea195a;
+@green: #360;
+@lime: #BCD630;
+@mahog: #CE0043; 
+@blue: #003e57;
+@orange: #fc0;
+@red: #f00;
+@teal: #008080;
+@yellow: #ff0;
+@black: #000;
+
+.red {color:@red;}
+.blue {color:@blue;}
+.mahog {color:@mahog;}
+.pink {color:@pink;}
+.green {color:@green;}
+.lime {color:@lime;}
+.orange {color:@orange;}
+.teal {color:@teal;}
+.yellow {color:@yellow;}
+.black {color:@black;}
+
+.border0{border:none;}
+.padding0 {padding:0;}
+.margin0 {margin:0;}
+
+a:hover {text-decoration:none;}
+
+@iterations: 100;
+@countby: 5;
+
+.mt-(@i) when (@i > 0) {
+    .mt-@{i} { margin-top: ~"@{i}px"; }
+    .mt-(@i - @countby);
+}
+.mt-(@iterations);
+
+.mr-(@i) when (@i > 0) {
+    .mr-@{i} { margin-right: ~"@{i}px"; }
+    .mr-(@i - @countby);
+}
+.mr-(@iterations);
+
+.mb-(@i) when (@i > 0) {
+    .mb-@{i} { margin-bottom: ~"@{i}px"; }
+    .mb-(@i - @countby);
+}
+.mb-(@iterations);
+
+.ml-(@i) when (@i > 0) {
+    .ml-@{i} { margin-left: ~"@{i}px"; }
+    .ml-(@i - @countby);
+}
+.ml-(@iterations);
+
+
+.pt-(@i) when (@i > 0) {
+    .pt-@{i} { padding-top: ~"@{i}px"; }
+    .pt-(@i - @countby);
+}
+.pt-(@iterations);
+
+.pr-(@i) when (@i > 0) {
+    .pr-@{i} { padding-right: ~"@{i}px"; }
+    .pr-(@i - @countby);
+}
+.pr-(@iterations);
+
+.pb-(@i) when (@i > 0) {
+    .pb-@{i} { padding-bottom: ~"@{i}px"; }
+    .pb-(@i - @countby);
+}
+.pb-(@iterations);
+
+.pl-(@i) when (@i > 0) {
+    .pl-@{i} { padding-left: ~"@{i}px"; }
+    .pl-(@i - @countby);
+}
+.pl-(@iterations);
